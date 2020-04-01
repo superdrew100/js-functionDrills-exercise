@@ -48,11 +48,17 @@ for (let i = 0; i < numsArray.length; i++) {
   }
 }
 console.log(Gr10)
-////////
+////////another attempt?
 let nums10 = numsArray.filture( function (i)) {
   return i.numsArray > 10
 }
 console.log(numsArray);
+///other attempt?
+NewArray = []
+//make the [] value on numsArray equil to number?
+if (number > 10) {
+  NewArray.push(number)
+}
 // #3
 // Input: an array of numbers
 // Output: `true` if ALL numbers passed in are strictly greater than 10;
