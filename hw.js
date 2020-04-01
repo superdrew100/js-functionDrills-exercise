@@ -90,8 +90,31 @@ if (number > 10) {
 //   Expect allGreaterThanTen([])).to.equal(true);
 
 const allGreaterThanTen = function (numsArray) {
+if (numsArray.length === 0){
+  return true
+}
+for(i=0; i < numsArray.length ; i++){
+  //Only numbers less than or equal to 10 will
+  //return false, once it returns false then the entire
+  //statment will be flase
+  if(numsArray[i] <= 10){
+    return false
+  }
+  //everything else will return
+    return true
+}
 
-  // Your Code Here
+
+
+  // Your Code Here thinking area...
+  for(i=0; i < numsArray.length ; i++)
+  if (numsArray.length === 0){
+
+  }
+  if( nums > 10){
+    return true
+  }
+
 }
 
 // #4
