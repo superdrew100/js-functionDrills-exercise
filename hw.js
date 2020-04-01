@@ -39,14 +39,24 @@ const sumOfNums = function (numsArray) {
 
 const numsGreaterThanTen = function (numsArray) {
   let numsGreaterThanTen = []
-
   for (let i = 0; i < numsArray.length; i++) {
+    //this means that I want it to run through every number
+    //starting at zero, till I get to the length of the array
+    //numsArray, so the stopping condition is the length of the 
+    //numsArray, and the i variable will increase by 1 every
+    //time the loop is run
     if (numsArray[i] > 10 ){
       numsGreaterThanTen.push(numsArray[i])
     }
   }
   return numsGreaterThanTen
 }
+
+
+
+
+
+
 
   // Your Code Here
 let Gr10 = []
