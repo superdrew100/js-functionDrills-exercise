@@ -38,6 +38,16 @@ const sumOfNums = function (numsArray) {
 //   Expect numsGreaterThanTen([-1, 0, 1, 9, 9.5, 9.99, 10, 11, 20, 100]) to equal [11, 20, 100]
 
 const numsGreaterThanTen = function (numsArray) {
+  let numsGreaterThanTen = []
+
+  for (let i = 0; i < numsArray.length; i++) {
+    if (numsArray[i] > 10 ){
+      numsGreaterThanTen.push(numsArray[i])
+    }
+  }
+  return numsGreaterThanTen
+}
+
   // Your Code Here
 let Gr10 = []
 for (let i = 0; i < numsArray.length; i++) {
