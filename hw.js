@@ -125,8 +125,28 @@ for(i=0; i < numsArray.length ; i++){
 //    to equal ['alphabet', 'banana', 'carrot']
 
 const wordsWithAtLeastFiveLetters = function (words) {
+  cont fiveLettersOrMoreArray = []
+}
+for(i = 0; i > words ;i++){
+  if(words[i].length >= 5){
+    fiveLettersOrMoreArray.push(words[i])
+  }
+  return fiveLettersOrMoreArray
+}
 
-  // Your Code Here
+
+  // Your Code Here thinking area...
+  //so the input is an array of strings ""
+  //so this os the answer i came up with on my own before he went over the
+  //question in class
+  //YES I DID IT CORRECTLY ON MY OWN
+  cont fiveLettersOrMoreArray = []
+}
+for(i = 0; i > words ;i++){
+  if(words[i].length >= 5){
+    fiveLettersOrMoreArray.push(words[i])
+  }
+  return fiveLettersOrMoreArray
 }
 
 // #5
