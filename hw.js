@@ -45,7 +45,7 @@ const numsGreaterThanTen = function (numsArray) {
     //numsArray, so the stopping condition is the length of the 
     //numsArray, and the i variable will increase by 1 every
     //time the loop is run
-    if (numsArray[i] > 10 ){
+    if (numsArray[i] > 10) {
       numsGreaterThanTen.push(numsArray[i])
     }
   }
@@ -58,7 +58,7 @@ const numsGreaterThanTen = function (numsArray) {
 
 
 
-  // Your Code Here
+// Your Code Here
 let Gr10 = []
 for (let i = 0; i < numsArray.length; i++) {
   if (cities[i].population > 10) {
@@ -67,7 +67,7 @@ for (let i = 0; i < numsArray.length; i++) {
 }
 console.log(Gr10)
 ////////another attempt?
-let nums10 = numsArray.filture( function (i)) {
+let nums10 = numsArray.filture(function (i)) {
   return i.numsArray > 10
 }
 console.log(numsArray);
@@ -90,28 +90,28 @@ if (number > 10) {
 //   Expect allGreaterThanTen([])).to.equal(true);
 
 const allGreaterThanTen = function (numsArray) {
-if (numsArray.length === 0){
-  return true
-}
-for(i=0; i < numsArray.length ; i++){
-  //Only numbers less than or equal to 10 will
-  //return false, once it returns false then the entire
-  //statment will be flase
-  if(numsArray[i] <= 10){
-    return false
-  }
-  //everything else will return
+  if (numsArray.length === 0) {
     return true
-}
+  }
+  for (i = 0; i < numsArray.length; i++) {
+    //Only numbers less than or equal to 10 will
+    //return false, once it returns false then the entire
+    //statment will be flase
+    if (numsArray[i] <= 10) {
+      return false
+    }
+    //everything else will return
+    return true
+  }
 
 
 
   // Your Code Here thinking area...
-  for(i=0; i < numsArray.length ; i++)
-  if (numsArray.length === 0){
+  for (i = 0; i < numsArray.length; i++)
+    if (numsArray.length === 0) {
 
-  }
-  if( nums > 10){
+    }
+  if (nums > 10) {
     return true
   }
 
@@ -127,23 +127,23 @@ for(i=0; i < numsArray.length ; i++){
 const wordsWithAtLeastFiveLetters = function (words) {
   cont fiveLettersOrMoreArray = []
 }
-for(i = 0; i > words ;i++){
-  if(words[i].length >= 5){
+for (i = 0; i > words; i++) {
+  if (words[i].length >= 5) {
     fiveLettersOrMoreArray.push(words[i])
   }
   return fiveLettersOrMoreArray
 }
 
 
-  // Your Code Here thinking area...
-  //so the input is an array of strings ""
-  //so this os the answer i came up with on my own before he went over the
-  //question in class
-  //YES I DID IT CORRECTLY ON MY OWN
-  cont fiveLettersOrMoreArray = []
+// Your Code Here thinking area...
+//so the input is an array of strings ""
+//so this os the answer i came up with on my own before he went over the
+//question in class
+//YES I DID IT CORRECTLY ON MY OWN
+cont fiveLettersOrMoreArray = []
 }
-for(i = 0; i > words ;i++){
-  if(words[i].length >= 5){
+for (i = 0; i > words; i++) {
+  if (words[i].length >= 5) {
     fiveLettersOrMoreArray.push(words[i])
   }
   return fiveLettersOrMoreArray
@@ -160,10 +160,20 @@ for(i = 0; i > words ;i++){
 //  Expect allStartingWithA([]) to equal true
 
 const allStartingWithA = function (words) {
+  if (words.length === 0) {
+    return true
+  }
+  // Your Code Here thinking space...
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].startsWith("a") === false && words[i].startsWith("A") === false) {
+      console.log(words[i])
+      return false
+    }
 
-  // Your Code Here
+  }
+  return true
 }
-
+console.log(allStartingWithA(['apple', 'alligator', 'Arkansas']))
 // #6
 // Input: an array of words
 // Output: `true` if there are ANY words that start with the letter 'b'
@@ -174,6 +184,12 @@ const allStartingWithA = function (words) {
 const anyStartingWithB = function (words) {
 
   // Your Code Here
+  //so th input is an array of strings
+  for (let i = 0; i < words.length; i++)
+    if (words[i].startsWith("b") === true && words[i].startsWith("B") === true) {
+      return true
+    }
+  return false
 }
 
 // This last set of functions are all related to one another! Use functions 7 to solve function 8,
@@ -191,7 +207,17 @@ const anyStartingWithB = function (words) {
 //  Expect hasAtLeastNVowels('dangerous', 5) to equal false
 //  Expect hasAtLeastNVowels('banana', -1) to equal null
 const hasAtLeastNVowels = function (word, n) {
-
+  if( n < 0){
+    return  null
+  }
+  let sum = 0
+  for (let i = 0; word.length; i++) {
+    if (word[i] === 'a' || word[i] === 'e' || word[i] === 'i' || word[i] === 'o' || word[i] === 'u')
+      sum += 1
+  }
+  if (sum >= n) {
+    return false
+  }
   // Your Code Here
 }
 
