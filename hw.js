@@ -18,6 +18,14 @@
 //   Expect sumOfNums([])) to equal 0
 
 const sumOfNums = function (numsArray) {
+  if (numsArray.length === 0){
+  return 0
+  }
+
+  let sum = 0
+  for (let i = 0; i < numsArray.length; i++) {
+    sum =+ numsArray[i]
+  }
 
   // Your Code Here
 }
@@ -32,10 +40,19 @@ const sumOfNums = function (numsArray) {
 //   Expect numsGreaterThanTen([-1, 0, 1, 9, 9.5, 9.99, 10, 11, 20, 100]) to equal [11, 20, 100]
 
 const numsGreaterThanTen = function (numsArray) {
-
   // Your Code Here
+let Gr10 = []
+for (let i = 0; i < numsArray.length; i++) {
+  if (cities[i].population > 10) {
+    Gr10.push(numsArray[i]);
+  }
 }
-
+console.log(Gr10)
+////////
+let nums10 = numsArray.filture( function (i)) {
+  return i.numsArray > 10
+}
+console.log(numsArray);
 // #3
 // Input: an array of numbers
 // Output: `true` if ALL numbers passed in are strictly greater than 10;
