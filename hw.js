@@ -18,14 +18,12 @@
 //   Expect sumOfNums([])) to equal 0
 
 const sumOfNums = function (numsArray) {
-  if (numsArray.length === 0){
-  return 0
-  }
 
   let sum = 0
   for (let i = 0; i < numsArray.length; i++) {
-    sum =+ numsArray[i]
+    sum += numsArray[i]
   }
+  return sum
 
   // Your Code Here
 }
